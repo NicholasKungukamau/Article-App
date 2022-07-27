@@ -22,3 +22,9 @@ function ourReducerFunction(state, action) {
       return { ...state, color: action.value.color, size: action.value.size }
   }
 }
+
+const initialState = {
+  size: 25,
+  color: "skyblue",
+  likeCount: 0
+}
