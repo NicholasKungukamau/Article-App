@@ -6,7 +6,7 @@ import MainArea from "./components/MainArea"
 import Footer from "./components/Footer"
 
 import OurContext from "./OurContext"
-import DispatchContext from "./DispatchContext"
+import DispatchContext from "./DispatchContext.js"
 
 const AnimalNamesContext = createContext()
 
