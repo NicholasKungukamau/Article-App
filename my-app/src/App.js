@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import OurContext from "../OurContext"
 
-function App() {
+function MainArea(props) {
+  const state = React.useContext(OurContext)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-area" style={{ color: state.color, fontSize: `${state.size}px` }}>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quod obcaecati dolore debitis amet aut, excepturi voluptas ratione quibusdam laboriosam, optio pariatur provident doloremque consequatur animi? Consequuntur, officiis. Explicabo, vel.</p>
     </div>
-  );
+  )
 }
 
-export default App;
+export default MainArea
