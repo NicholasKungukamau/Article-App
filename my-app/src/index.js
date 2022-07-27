@@ -32,3 +32,28 @@ const initialState = {
 function App() {
   const [state, dispatch] = useReducer(ourReducerFunction, initialState)
   const [names, setNames] = useState({ catName: "Meowsalot", dogName: "Barksalot" })
+
+  return (
+    <AnimalNamesContext.Provider value={names}>
+      <DispatchContext.Provider value={dispatch}>
+        <OurContext.Provider value={state}>
+          <div className="grid-parent">
+            <div className="header">
+              <h1>Welcome To Our App</h1>
+              <p>
+                The current size is {state.size} and the current color is {state.color}.
+              </p>
+              <p>
+                This page has been liked <strong>{state.likeCount}</strong> times.
+              </p>
+            </div>
+            <Sidebar />
+            <MainArea />
+            <Footer />
+            <MemoizedExtraFooter />
+          </div>
+        </OurContext.Provider>
+      </DispatchContext.Provider>
+    </AnimalNamesContext.Provider>
+  )
+}
