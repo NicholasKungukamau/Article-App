@@ -57,3 +57,20 @@ function App() {
     </AnimalNamesContext.Provider>
   )
 }
+
+const MemoizedExtraFooter = React.memo(ExtraFooter)
+
+function ExtraFooter() {
+  const names = React.useContext(AnimalNamesContext)
+  console.log("Imagine this function is slow or expensive to run.")
+
+  return (
+    <div>
+      <p>Cat name: {names.catName}</p>
+      <p>Dog name: {names.dogName}</p>
+    </div>
+  )
+}
+
+const root = createRoot(document.querySelector("#app"))
+root.render(<App />)
