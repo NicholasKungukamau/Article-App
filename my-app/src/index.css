@@ -6,3 +6,8 @@ body {
   background-color: #dedede;
   line-height: 1.65;
 }
+
+h1,
+p {
+  margin: 0;
+}
