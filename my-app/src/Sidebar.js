@@ -17,3 +17,8 @@ function Sidebar(props) {
       >
         Make the text 20px and pink
       </button>
+          </div>
+  )
+}
+
+export default Sidebar
