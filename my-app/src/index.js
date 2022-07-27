@@ -28,3 +28,7 @@ const initialState = {
   color: "skyblue",
   likeCount: 0
 }
+
+function App() {
+  const [state, dispatch] = useReducer(ourReducerFunction, initialState)
+  const [names, setNames] = useState({ catName: "Meowsalot", dogName: "Barksalot" })
