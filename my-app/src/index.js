@@ -7,3 +7,18 @@ import Footer from "./components/Footer"
 
 import OurContext from "./OurContext"
 import DispatchContext from "./DispatchContext"
+
+const AnimalNamesContext = createContext()
+
+function ourReducerFunction(state, action) {
+  switch (action.type) {
+    case "incrementLikes":
+      return { ...state, likeCount: state.likeCount + 1 }
+    case "changeSize":
+      return { ...state, size: action.value }
+    case "changeColor":
+      return { ...state, color: action.value }
+    case "changeColorAndSize":
+      return { ...state, color: action.value.color, size: action.value.size }
+  }
+}
