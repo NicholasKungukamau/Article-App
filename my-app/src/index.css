@@ -11,3 +11,8 @@ h1,
 p {
   margin: 0;
 }
+
+.grid-parent {
+  display: grid;
+  gap: 30px;
+}
