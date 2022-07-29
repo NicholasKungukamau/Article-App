@@ -1,5 +1,5 @@
 # MY ARTICLE APP
-## Favorite Dog  https://nicholaskungukamau.github.io/Article-App/
+## My Article  https://nicholaskungukamau.github.io/Article-App/
 
 ## Author
 Nicholas Kung'u Kamau
