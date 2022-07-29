@@ -31,7 +31,7 @@ To access this project on your local files, you can clone it using these steps
 * JS- which was used to allows make web page interactive
 * Git- used for tracking changes in the source code.
 
-## Live site
+## Live site 
 Click this link to view live https://nicholaskungukamau.github.io/Article-App/
 
 
