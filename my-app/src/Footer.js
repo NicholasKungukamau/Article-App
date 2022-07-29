@@ -8,10 +8,9 @@ function Footer(props) {
   return (
     <footer className="footer">
       <p>
-        This is the footer. <button onClick={() => dispatch({ type: "changeSize", value: 30 })}>Make the text 30px but leave the color the same</button>
-      </p>
-       <p>
-        <button onClick={() => dispatch({ type: "incrementLikes" })}>Like The Page</button>
+        Did you like this article?  
+              <button  className="b3" onClick={() => dispatch({ type: "incrementLikes" })}>Like ❤️</button> </p>
+      <p><button className="b2" onClick={() => dispatch({ type: "changeSize", value: 30 })}>Make the text 30px but leave the color the same</button>
       </p>
     </footer>
   )
